@@ -1,6 +1,132 @@
-body{
-    background-color: rgb( 225, 222, 217);
-    background-image: url(../ASSETS/oi.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+.inicial {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .inicial .overlap-group-wrapper {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+  }
+  
+  .inicial .overlap-group {
+    position: relative;
+    height: 1024px;
+    background-color: #d7d5cf;
+  }
+  
+  .inicial .rectangle {
+    position: absolute;
+    width: 1386px;
+    height: 939px;
+    top: 29px;
+    left: 27px;
+    background-color: #d7d5cf;
+    border-radius: 25px;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: inset -9px 17px 35px 29px #b5b0ab;
+  }
+  
+  .inicial .div {
+    position: absolute;
+    width: 1341px;
+    height: 48px;
+    top: 31px;
+    left: 47px;
+    background-color: #8c857e;
+    filter: blur(28.8px);
+  }
+  
+  .inicial .rectangle-2 {
+    position: absolute;
+    width: 898px;
+    height: 48px;
+    top: 473px;
+    left: -393px;
+    background-color: #ece7e2;
+    transform: rotate(-90deg);
+    filter: blur(28.8px);
+  }
+  
+  .inicial .rectangle-3 {
+    position: absolute;
+    width: 1319px;
+    height: 14px;
+    top: 954px;
+    left: 69px;
+    background-color: #eaeaea;
+    filter: blur(28.8px);
+  }
+  
+  .inicial .rectangle-4 {
+    position: center;
+    width: 85px;
+    height: 44px;
+    top: 44px;
+    left: 1332px;
+    background-color: #62554abf;
+    border-radius: 0px 50px 50px 0px;
+    transform: rotate(-41.17deg);
+    filter: blur(34.5px);
+  }
+  
+  .inicial .rectangle-5 {
+    position: absolute;
+    width: 85px;
+    height: 44px;
+    top: 910px;
+    left: 24px;
+    background-color: #f3f2f2;
+    border-radius: 0px 50px 50px 0px;
+    transform: rotate(141.06deg);
+    filter: blur(34.5px);
+  }
+  
+  .inicial .rectangle-6 {
+    position: absolute;
+    width: 85px;
+    height: 14px;
+    top: 60px;
+    left: 1333px;
+    background-color: #62554a82;
+    border-radius: 0px 50px 50px 0px;
+    transform: rotate(-41.17deg);
+    filter: blur(14.8px);
+  }
+  
+  .inicial .rectangle-7 {
+    position: absolute;
+    width: 85px;
+    height: 14px;
+    top: 926px;
+    left: 24px;
+    background-color: #ffffff;
+    border-radius: 0px 50px 50px 0px;
+    transform: rotate(141.06deg);
+    filter: blur(14.8px);
+  }
+  
+  .inicial .rectangle-8 {
+    position: absolute;
+    width: 1274px;
+    height: 867px;
+    top: 79px;
+    left: 83px;
+    background-color: #3d3d3d;
+    border-radius: 30px;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  .inicial .img {
+    position: absolute;
+    width: 1274px;
+    height: 867px;
+    top: 79px;
+    left: 83px;
+    object-fit: cover;
+  }
+ 
