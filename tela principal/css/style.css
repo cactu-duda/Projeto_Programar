@@ -1,4 +1,6 @@
 body{
     background-color: rgb( 225, 222, 217);
     background-image: url(../ASSETS/oi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
