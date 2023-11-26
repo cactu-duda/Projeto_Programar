@@ -8,9 +8,3 @@ body{
     height: 100vh;
     margin: 0;
 }
-taskbar{
-  color: rgb(191, 191, 191);
-  border: 5px;
-  border-color: white black black white;
-  height: 50px;
-}
