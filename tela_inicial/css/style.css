@@ -7,7 +7,7 @@
   .monitor {
     position: relative;
     display: flex;
-    background-image: url(../assets/tela_monitor.png);
+    background-image: url(../assets/tela_monitor_inicial.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
