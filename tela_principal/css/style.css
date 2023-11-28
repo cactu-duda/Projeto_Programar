@@ -1,10 +1,27 @@
-body{
-  background-color: black;
-    background-image: url(../assets/tela_monitor.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 100vh;
-    margin: 0;
+.body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.monitor {
+  position: relative;
+  display: flex;
+  background-image: url(../assets/tela_monitor.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 900px;
+  width: 900px;
+}
+
+.screen {
+  position: absolute;
+  background-color: rgba(0, 255, 0, 0.5);
+  top: 137px;
+  left: 148px;
+  height: 450px;
+  width: 619px;
+  border-radius: 20px;
+  /* box-sizing: border-box; */
 }
