@@ -1,31 +1,102 @@
 .body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .monitor {
-    position: relative;
-    display: flex;
-    background-image: url(../assets/tela_monitor_inicial.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 900px;
-    width: 900px;
-  }
-  
-  .screen {
-    position: absolute;
-    top: 137px;
-    left: 148px;
-    height: 450px;
-    width: 619px;
-    border-radius: 20px;
-  }
-.login{
-    width: 500px;
-    height: 500px;
-    border: 8px;
-    border-color: black;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.monitor {
+  position: relative;
+  display: flex;
+  background-image: url(../assets/tela_monitor_inicial.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 900px;
+  width: 900px;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-image: url(../assets/gradiente.png);
+
+  top: 137px;
+  left: 148px;
+  height: 450px;
+  width: 619px;
+  border-radius: 20px;
+  /* box-sizing: border-box; */
+}
+
+form {
+text-align: center;
+width: 284px;
+height: 150px;
+margin: 0 auto;
+
+background-color: #BFBFBF;
+box-shadow: 2px 2px 0px 0px #FFF inset, -2px -2px 0px 0px #808080 inset, 1px 1px 0px 0px #DBDBDB inset, -1px -1px 0px 0px #000 inset;
+color: #000;
+font-family: 'Courier New', Courier, monospace;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 200% */
+}
+
+
+.logo-windows {
+width: 320px;
+flex-shrink: 0;
+}
+
+
+h5 {
+font-family: 'Courier New', Courier, monospace;
+font-size: 16px;
+font-style: normal;
+font-weight: 800;
+margin: 0;
+}
+
+label {
+font-family: 'Courier New', Courier, monospace;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+margin: 0;
+}
+
+
+.input {
+text-align: left;
+padding: 5px;
+margin: 0 auto;
+margin-bottom: 10px;
+width: 50%;
+height: 20%;
+}
+
+input {
+box-shadow: 0.5px 0.5px 0px 0px #0A0A0A inset, -0.5px -0.5px 0px 0px #DFDFDF inset, 0.25px 0.25px 0px 0px #808080 inset, -0.25px -0.25px 0px 0px #FFF inset;
+}
+
+button {
+margin-top: 5px;
+box-shadow: 1px 1px 0px 0px #DBDBDB inset, -0.75px -0.75px 0px 0px #808080 inset, 0.5px 0.5px 0px 0px #FFF inset, -0.5px -0.5px 0px 0px #000 inset;
+
+border: 0;
+}
+
+button:hover {
+box-shadow:  1px 1px;
+
+}
+
+input {
+font-family: 'Courier New', Courier, monospace;
+font-size: 10px;
+font-style: normal;
 }
