@@ -2,8 +2,6 @@
 .body {
   font-family: 'Pixelify Sans';
   overflow: hidden;
-  justify-content: center;
-  justify-self: center;
 }
 
 .monitor {

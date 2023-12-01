@@ -5,24 +5,29 @@ function updateClock() {
 
     const timeString = `${hours}:${minutes}`;
     document.getElementById('time').innerText = timeString;
-  }
-  updateClock();
-  setInterval(updateClock, 60000);
+}
 
-  var popup = document.getElementById('popup');
-  var perfil = document.getElementById('perfil');
-  
-  perfil.addEventListener('click', function abrirPopup() {
+function abrirPopup() {
+    var popup = document.getElementById('popup');
+    var perfil = document.getElementById('perfil');
     if (popup.style.display === 'none' || popup.style.display === '') {
-      popup.style.display = 'block';
-      perfil.focus();
+        popup.style.display = 'block';
+        perfil.focus();
     } else {
-      popup.style.display = 'none';
+        popup.style.display = 'none';
     }
-  });
-  
-  document.addEventListener('click', function fecharPopup(event) {
+}
+
+function fecharPopup(event) {
+    var popup = document.getElementById('popup');
     if (event.target === popup) {
-      popup.style.display = 'none';
+        popup.style.display = 'none';
     }
-  });
+}
+
+
+updateClock();
+setInterval(updateClock, 60000);
+
+document.getElementById('perfil').addEventListener('click', abrirPopup);
+document.addEventListener('click', fecharPopup);
