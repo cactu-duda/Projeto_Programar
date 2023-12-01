@@ -1,9 +1,9 @@
 
 .body {
   font-family: 'Pixelify Sans';
-  margin: 0;
-  padding: 0;
   overflow: hidden;
+  justify-content: center;
+  justify-self: center;
 }
 
 .monitor {
