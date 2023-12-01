@@ -115,8 +115,7 @@
     box-shadow: inset -1px -1px #0a0a0a,
     inset 1px 1px #ffffff, inset -2px -2px #808080,
     inset 2px 2px #dfdfdf;
-    transition: transform 5s ease-out;
-    z-index: 0;
+
   }
 
   .sair{
@@ -175,6 +174,8 @@
   align-items: center;
   color: #ffffff;
   writing-mode: vertical-rl;
+  font-family: 'Pixelify Sans';
+  font-size: 13px;
   }
 
   .my_computer {
