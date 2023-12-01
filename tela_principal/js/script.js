@@ -1,25 +1,10 @@
-const popupButton = document.getElementById('perfil');
-const popupContainer = document.getElementById('popup');
+function updateClock() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
 
-popupButton.addEventListener('click', function () {
-    popupContainer.style.display = 'block';
-    popupContainer.style.opacity = '1';
-    popupContainer.style.transform = 'translateY(0)';
-
-    // Add a click event listener to the document
-    document.addEventListener('click', closePopupOnClick);
-});
-
-function closePopupOnClick(event) {
-    // Check if the clicked element is outside the popup
-    if (!popupContainer.contains(event.target)) {
-        popupContainer.style.opacity = '0';
-        popupContainer.style.transform = 'translateY(100%)';
-        // Remove the click event listener to avoid conflicts
-        document.removeEventListener('click', closePopupOnClick);
-        // Hide the popup after the transition
-        setTimeout(() => {
-            popupContainer.style.display = 'none';
-        }, 300);
-    }
-}
+    const timeString = `${hours}:${minutes}`;
+    document.getElementById('time').innerText = timeString;
+  }
+  updateClock();
+  setInterval(updateClock, 1000);

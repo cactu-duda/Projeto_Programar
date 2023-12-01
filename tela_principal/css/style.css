@@ -262,9 +262,11 @@
   }
 
   .folder_flavia {
+    border: none;
+    background-color: transparent;
     position: absolute;
     top: 90px;
-    left: 100px;
+    left: 95px;
     background-image: url(../assets/folder-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
@@ -274,9 +276,11 @@
   }
 
   .folder_maira {
+    border: none;
+    background-color: transparent;
     position: absolute;
     top: 160px;
-    left: 100px;
+    left: 95px;
     background-image: url(../assets/folder-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
@@ -286,9 +290,11 @@
   }
 
   .folder_maria {
+    border: none;
+    background-color: transparent;
     position: absolute;
     top: 230px;
-    left: 95px;
+    left: 90px;
     background-image: url(../assets/folder-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
