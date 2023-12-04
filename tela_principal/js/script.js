@@ -51,6 +51,7 @@ var dados_portfolios = {
 function portfolios(pessoa) {
     document.getElementById('titulo').innerHTML = dados_portfolios[pessoa].nome;
     document.getElementById('descricao').innerHTML = dados_portfolios[pessoa].descricao;
+    document.getElementById('texto-titulo-barra').innerHTML = dados_portfolios[pessoa].nome;
 }
 
 updateClock();
