@@ -22,6 +22,7 @@
   
   .texto-titulo-barra {
     margin-left: 10px;
+    font-family: 'Pixelify Sans';
     font-weight: bold;
     color: white;
     letter-spacing: 1px;
@@ -49,6 +50,7 @@
     background-repeat: no-repeat;
     background-size: 9px;
     background-position: absolute;
+    background-position: center;
   }
   
   .controles-titulo-barra button[aria-label="Maximize"] {
@@ -57,14 +59,16 @@
     background-repeat: no-repeat;
     background-size: 9px;
     background-position: absolute;
+    background-position: center;
   }
   
   .controles-titulo-barra button[aria-label="Close"] {
-    margin-left: px;
+    margin-left: 1px;
     background-image: url("../assets/Button\ Close.png");
     background-repeat: no-repeat;
     background-size: 7px;
     background-position: absolute;
+    background-position: center;
   }
   
   .janela-body {
