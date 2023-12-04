@@ -8,8 +8,8 @@ function updateClock() {
 }
 
 function abrirPopup() {
-    var popup = document.getElementById('popup');
     var perfil = document.getElementById('perfil');
+    var popup = document.getElementById('popup');
     if (popup.style.display === 'none' || popup.style.display === '') {
         popup.style.display = 'block';
         perfil.focus();
@@ -26,21 +26,11 @@ function fecharPopup(event) {
 }
 
 function abrirPasta() {
-    var portfolio = document.getElementById('portfolio');
-    var flavia = document.getElementById('flavia');
-    if (portfolio.style.display === 'none' || portfolio.style.display === '') {
-        portfolio.style.display = 'block';
-        flavia.focus();
-    } else {
-        portfolio.style.display = 'none';
-    }
+    document.getElementById('portfolio').style.display = 'block';
 }
 
-function fecharPasta(event) {
-    var portfolio = document.getElementById('portfolio');
-    if (event.target === portfolio) {
-        portfolio.style.display = 'none';
-    }
+function fecharPasta() {
+    document.getElementById('portfolio').style.display = 'none';
 }
 
 
@@ -49,6 +39,3 @@ setInterval(updateClock, 60000);
 
 document.getElementById('perfil').addEventListener('click', abrirPopup);
 document.addEventListener('click', fecharPopup);
-
-document.getElementById('flavia').addEventListener('click', abrirPasta);
-document.addEventListener('click', fecharPasta);
