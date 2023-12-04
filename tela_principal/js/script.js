@@ -25,14 +25,33 @@ function fecharPopup(event) {
     }
 }
 
-function abrirPasta() {
+function abrirPasta(pessoa) {
     document.getElementById('portfolio').style.display = 'block';
+    portfolios(pessoa)
 }
 
 function fecharPasta() {
     document.getElementById('portfolio').style.display = 'none';
 }
 
+var dados_portfolios = {
+    flavia : {
+        nome : "Flavia Danza Vilela",
+        descricao : "Olá sou designer",}
+        ,
+    maira : {
+        nome : "Maira Alves",
+        descricao : "Olá sou designer",}
+        ,
+    maria : {
+        nome : "Maria Eduarda",
+        descricao : "Olá sou designer",}  
+}
+
+function portfolios(pessoa) {
+    document.getElementById('titulo').innerHTML = dados_portfolios[pessoa].nome;
+    document.getElementById('descricao').innerHTML = dados_portfolios[pessoa].descricao;
+}
 
 updateClock();
 setInterval(updateClock, 60000);

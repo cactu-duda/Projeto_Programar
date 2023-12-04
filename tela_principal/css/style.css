@@ -394,3 +394,10 @@
     left: 7px;
     top: 45px;
   }
+
+  .titulo {
+    position: absolute;
+    font-family: 'Pixelify Sans';
+    font-size: 20px;
+    color: black;
+  }
