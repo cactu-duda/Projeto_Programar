@@ -21,82 +21,148 @@
   align-items: center;
   position: absolute;
   background-image: url(../assets/gradiente.png);
-
   top: 137px;
   left: 148px;
   height: 450px;
   width: 619px;
   border-radius: 20px;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
-form {
-text-align: center;
-width: 284px;
-height: 150px;
-margin: 0 auto;
-
-background-color: #BFBFBF;
-box-shadow: 2px 2px 0px 0px #FFF inset, -2px -2px 0px 0px #808080 inset, 1px 1px 0px 0px #DBDBDB inset, -1px -1px 0px 0px #000 inset;
-color: #000;
-font-family: 'Courier New', Courier, monospace;
-font-size: 11px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 200% */
-}
-
-
-.logo-windows {
-width: 320px;
+.window {
+position: absolute;
+top: 40px;
+width: 211px;
+height: 141px;
 flex-shrink: 0;
 }
 
-
-h5 {
-font-family: 'Courier New', Courier, monospace;
-font-size: 16px;
-font-style: normal;
-font-weight: 800;
-margin: 0;
+.login{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  width: 300px;
+  height: 190px;
+  background-color: #c0c0c0;
+  box-shadow: inset -1px -1px #0a0a0a,
+  inset 1px 1px #ffffff, inset -2px -2px #808080,
+  inset 2px 2px #dfdfdf;
+  box-sizing: border-box;
 }
 
-label {
-font-family: 'Courier New', Courier, monospace;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-margin: 0;
+form {
+  position: absolute;
+  bottom: 43px;
+  left: 70px;
 }
 
+.logintext{
+  text-align: center;
+  font-family: 'Pixelify Sans';
+  font-size: 30px;
+  left: 50px;
+  }  
 
-.input {
+input {
 text-align: left;
-padding: 5px;
-margin: 0 auto;
-margin-bottom: 10px;
-width: 50%;
-height: 20%;
-}
-
-input {
-box-shadow: 0.5px 0.5px 0px 0px #0A0A0A inset, -0.5px -0.5px 0px 0px #DFDFDF inset, 0.25px 0.25px 0px 0px #808080 inset, -0.25px -0.25px 0px 0px #FFF inset;
-}
-
-button {
-margin-top: 5px;
-box-shadow: 1px 1px 0px 0px #DBDBDB inset, -0.75px -0.75px 0px 0px #808080 inset, 0.5px 0.5px 0px 0px #FFF inset, -0.5px -0.5px 0px 0px #000 inset;
-
-border: 0;
-}
-
-button:hover {
-box-shadow:  1px 1px;
-
-}
-
-input {
-font-family: 'Courier New', Courier, monospace;
+font-family: 'Pixelify Sans';
 font-size: 10px;
-font-style: normal;
+width: 150px;
+height: 20px;
+border-radius: none;box-shadow: inset -1px -1px #ffffff,
+inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf,
+inset 2px 2px #808080;
+margin: 0;
 }
+
+p{
+font-family: 'Pixelify Sans';
+margin: 0;
+}
+
+.cadastro{
+  position: absolute;
+  box-sizing: border-box;
+  border: none;
+  background: #c0c0c0;
+  box-shadow: inset -1px -1px #0a0a0a,
+    inset 1px 1px #ffffff, inset -2px -2px #808080,
+    inset 2px 2px #dfdfdf;
+  min-width: 100px;
+  min-height: 23px;
+  text-align: center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: 15%;
+  font-family: 'Pixelify Sans';
+  font-weight: bold;
+  font-size: 13px;
+ }
+  
+ .cadastro:not(:disabled):active {
+    box-shadow: inset -1px -1px #ffffff,
+      inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf,
+      inset 2px 2px #808080;
+  }
+  
+  .cadastro:focus {
+    outline: 1px dotted #000000;
+    outline-offset: -4px;
+  }
+  
+  :disabled {
+    color: #808080;
+    text-shadow: 1px 1px 0 #ffffff;
+  }
+  
+  :disabled + label {
+    color: #808080;
+    text-shadow: 1px 1px 0 #ffffff;
+  } 
+
+  .entra{
+    position: absolute;
+    box-sizing: border-box;
+    border: none;
+    background: #c0c0c0;
+    box-shadow: inset -1px -1px #0a0a0a,
+      inset 1px 1px #ffffff, inset -2px -2px #808080,
+      inset 2px 2px #dfdfdf;
+    min-width: 65px;
+    min-height: 23px;
+    text-align: center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 15%;
+    font-family: 'Pixelify Sans';
+    font-weight: bold;
+    font-size: 13px;
+    left: 110px;
+    }
+  
+  .entra:not(:disabled):active {
+    box-shadow: inset -1px -1px #ffffff,
+      inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf,
+      inset 2px 2px #808080;
+  }
+  
+  .entra:focus {
+    outline: 1px dotted #000000;
+    outline-offset: -4px;
+  }
+  
+  :disabled {
+    color: #808080;
+    text-shadow: 1px 1px 0 #ffffff;
+  }
+  
+  :disabled + label {
+    color: #808080;
+    text-shadow: 1px 1px 0 #ffffff;
+  } 
+
+  .buttons{
+    bottom: 34px;
+    left: 60px;
+  }
