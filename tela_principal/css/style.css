@@ -44,7 +44,7 @@
   bottom: 4px;
   left: 542px;
   width: 72px;
-  height: 22px;
+  height: 23px;
   border-bottom-right-radius: 17px;
   background-color: #c0c0c0;
   box-shadow: inset -1px -1px #ffffff,
@@ -59,7 +59,7 @@
 }
 .perfil{
   position: absolute;
-  bottom: 3px;
+  bottom: 4px;
   right: 550px;
   box-sizing: border-box;
   border: none;

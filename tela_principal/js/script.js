@@ -38,7 +38,7 @@ var dados_portfolios = {
     flavia : {
         nome : "Flavia Danza Vilela",
         descricao : "Olá sou designer",
-        foto_pessoal: "assets/port_flavia/foto_flavia.png" 
+        foto_pessoal: "foto_flavia.png"
     }
         ,
     maira : {
