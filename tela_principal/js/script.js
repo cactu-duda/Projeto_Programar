@@ -37,21 +37,28 @@ function fecharPasta() {
 var dados_portfolios = {
     flavia : {
         nome : "Flavia Danza Vilela",
-        descricao : "Olá sou designer",}
+        descricao : "Olá sou designer",
+        foto_pessoal: "assets/port_flavia/foto_flavia.png" 
+    }
         ,
     maira : {
         nome : "Maira Alves",
-        descricao : "Olá sou designer",}
+        descricao : "Olá sou designer",
+        foto_pessoal: "foto_maira.png"
+    }
         ,
     maria : {
         nome : "Maria Eduarda",
-        descricao : "Olá sou designer",}  
+        descricao : "Olá sou designer",
+        foto_pessoal: "foto_maria.png"
+    }  
 }
 
 function portfolios(pessoa) {
     document.getElementById('titulo').innerHTML = dados_portfolios[pessoa].nome;
     document.getElementById('descricao').innerHTML = dados_portfolios[pessoa].descricao;
     document.getElementById('texto-titulo-barra').innerHTML = dados_portfolios[pessoa].nome;
+    document.getElementById('fotopessoal').src = dados_portfolios[pessoa].foto_pessoal;
 }
 
 updateClock();
@@ -59,3 +66,4 @@ setInterval(updateClock, 60000);
 
 document.getElementById('perfil').addEventListener('click', abrirPopup);
 document.addEventListener('click', fecharPopup);
+

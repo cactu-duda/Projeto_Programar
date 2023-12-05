@@ -179,7 +179,7 @@
     position: absolute;
     top: 20px;
     left: 10px;
-    background-image: url(../assets/my-computer-32x32.png);
+    background-image: url(../assets/icons/my-computer-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -191,7 +191,7 @@
     position: absolute;
     top: 20px;
     left: 100px;
-    background-image: url(../assets/trashcan-32x32.png);
+    background-image: url(../assets/icons/trashcan-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -203,7 +203,7 @@
     position: absolute;
     top: 90px;
     left: 10px;
-    background-image: url(../assets/my-documents-folder-32x32.png);
+    background-image: url(../assets/icons/my-documents-folder-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -215,7 +215,7 @@
     position: absolute;
     top: 160px;
     left: 10px;
-    background-image: url(../assets/calculator-32x32.png);
+    background-image: url(../assets/icons/calculator-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -227,7 +227,7 @@
     position: absolute;
     top: 230px;
     left: 24px;
-    background-image: url(../assets/pinball-32x32.png);
+    background-image: url(../assets/icons/pinball-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -239,7 +239,7 @@
     position: absolute;
     top: 300px;
     left: 17px;
-    background-image: url(../assets/solitaire-32x32.png);
+    background-image: url(../assets/icons/solitaire-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -251,7 +251,7 @@
     position: absolute;
     top: 300px;
     left: 95px;
-    background-image: url(../assets/notepad-32x32.png);
+    background-image: url(../assets/icons/notepad-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -265,7 +265,7 @@
     position: absolute;
     top: 90px;
     left: 95px;
-    background-image: url(../assets/folder-32x32.png);
+    background-image: url(../assets/icons/folder-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -279,7 +279,7 @@
     position: absolute;
     top: 160px;
     left: 95px;
-    background-image: url(../assets/folder-32x32.png);
+    background-image: url(../assets/icons/folder-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -293,7 +293,7 @@
     position: absolute;
     top: 230px;
     left: 90px;
-    background-image: url(../assets/folder-32x32.png);
+    background-image: url(../assets/icons/folder-32x32.png);
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -328,9 +328,9 @@
   }
   
   .texto-titulo-barra {
-    margin-left: 10px;
+    margin-left: 5px;
     font-family: 'Pixelify Sans';
-    font-weight: bold;
+    font-size: 10px;
     color: white;
     letter-spacing: 1px;
     margin-right: 24px;
@@ -352,17 +352,17 @@
   }
   
   .controles-titulo-barra button[aria-label="Minimize"] {
-    margin-left: 1px;
-    background-image: url("../assets/Button\ Minimize.png");
+    margin-left: 2px;
+    background-image: url("../assets/icons/Button\ Minimize.png");
     background-repeat: no-repeat;
     background-size: 9px;
     background-position: absolute;
-    background-position: center;
+    background-position: baseline;
   }
   
   .controles-titulo-barra button[aria-label="Maximize"] {
     margin-left: 1px;
-    background-image: url("../assets/Button\ Maximize.png");
+    background-image: url("../assets/icons/Button\ Maximize.png");
     background-repeat: no-repeat;
     background-size: 9px;
     background-position: absolute;
@@ -371,11 +371,31 @@
   
   .controles-titulo-barra button[aria-label="Close"] {
     margin-left: 1px;
-    background-image: url("../assets/Button\ Close.png");
+    background-image: url("../assets/icons/Button\ Close.png");
     background-repeat: no-repeat;
     background-size: 7px;
     background-position: absolute;
     background-position: center;
+  }
+
+  .menubar{
+    position: absolute;
+    padding: 2px;
+    top: 21px;
+    width: 416px;
+    height: 18px;
+    box-shadow: inset -1px -1px #7f7f7f,
+      inset 1px 1px #ffffff, inset -1px -1px #808080,
+      inset 1px 1px #dfdfdf;
+    background: #c0c0c0;
+  }
+
+  .menuoptions {
+    display: inline-block;
+    font-family: 'Pixelify Sans';
+    font-size: 15px;
+    padding-right: 15px;
+    margin: auto;
   }
   
   .janela-body {
@@ -384,20 +404,30 @@
 
   .conteudo {
     position: absolute;
-    padding: 2px;
-    width: 408px;
-    height: 310px;
+    width: 415px;
+    height: 311px;
     background-color: #ffffff;
     box-shadow: inset -1px -1px #ffffff,
       inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf,
       inset 2px 2px #808080;
-    left: 7px;
+    left: 3px;
     top: 45px;
   }
 
   .titulo {
     position: absolute;
     font-family: 'Pixelify Sans';
-    font-size: 20px;
+    font-size: 25px;
     color: black;
+    padding-left: 5px;
+    margin-top: 3px;
+  }
+
+  .descricao {
+    position: absolute;
+    font-family: 'Pixelify Sans';
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+    top: 50px;
   }
