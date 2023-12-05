@@ -25,40 +25,31 @@ function fecharPopup(event) {
     }
 }
 
-function abrirPasta(pessoa) {
-    document.getElementById('portfolio').style.display = 'block';
-    portfolios(pessoa)
+function abrirPastaflavia() {
+    document.getElementById('portfolioflavia').style.display = 'block';
+    portfolios()
 }
 
-function fecharPasta() {
-    document.getElementById('portfolio').style.display = 'none';
+function abrirPastamaira() {
+    document.getElementById('portfoliomaira').style.display = 'block';
+    portfolios()
 }
 
-var dados_portfolios = {
-    flavia : {
-        nome : "Flavia Danza Vilela",
-        descricao : "Olá sou designer",
-        foto_pessoal: "foto_flavia.png"
-    }
-        ,
-    maira : {
-        nome : "Maira Alves",
-        descricao : "Olá sou designer",
-        foto_pessoal: "foto_maira.png"
-    }
-        ,
-    maria : {
-        nome : "Maria Eduarda",
-        descricao : "Olá sou designer",
-        foto_pessoal: "foto_maria.png"
-    }  
+function abrirPastamaria() {
+    document.getElementById('portfoliomaria').style.display = 'block';
+    portfolios()
 }
 
-function portfolios(pessoa) {
-    document.getElementById('titulo').innerHTML = dados_portfolios[pessoa].nome;
-    document.getElementById('descricao').innerHTML = dados_portfolios[pessoa].descricao;
-    document.getElementById('texto-titulo-barra').innerHTML = dados_portfolios[pessoa].nome;
-    document.getElementById('fotopessoal').src = dados_portfolios[pessoa].foto_pessoal;
+function fecharPastaflavia() {
+    document.getElementById('portfolioflavia').style.display = 'none';
+}
+
+function fecharPastamaira() {
+    document.getElementById('portfoliomaira').style.display = 'none';
+}
+
+function fecharPastamaria() {
+    document.getElementById('portfoliomaria').style.display = 'none';
 }
 
 updateClock();
